@@ -1,4 +1,236 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap);
 @charset "UTF-8";
+@font-face {
+  font-family: HeliosBlackC;
+  font-display: swap;
+  src: url("../fonts/HeliosBlackC.woff2") format("woff2"), url("../fonts/HeliosBlackC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosC;
+  font-display: swap;
+  src: url("../fonts/HeliosC-Bold.woff2") format("woff2"), url("../fonts/HeliosC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosBlackC;
+  font-display: swap;
+  src: url("../fonts/HeliosBlackC-Italic.woff2") format("woff2"), url("../fonts/HeliosBlackC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosC;
+  font-display: swap;
+  src: url("../fonts/HeliosC-BoldItalic.woff2") format("woff2"), url("../fonts/HeliosC-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondBlackC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondBlackC-Italic.woff2") format("woff2"), url("../fonts/HeliosCondBlackC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCompressedC;
+  font-display: swap;
+  src: url("../fonts/HeliosCompressedC.woff2") format("woff2"), url("../fonts/HeliosCompressedC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosC;
+  font-display: swap;
+  src: url("../fonts/HeliosC.woff2") format("woff2"), url("../fonts/HeliosC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondBlackC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondBlackC.woff2") format("woff2"), url("../fonts/HeliosCondBlackC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosC;
+  font-display: swap;
+  src: url("../fonts/HeliosC-Italic.woff2") format("woff2"), url("../fonts/HeliosC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondC-Bold.woff2") format("woff2"), url("../fonts/HeliosCondC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondC-BoldItalic.woff2") format("woff2"), url("../fonts/HeliosCondC-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondC-Italic.woff2") format("woff2"), url("../fonts/HeliosCondC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondC.woff2") format("woff2"), url("../fonts/HeliosCondC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondLightC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondLightC-Italic.woff2") format("woff2"), url("../fonts/HeliosCondLightC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondLightC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondLightC.woff2") format("woff2"), url("../fonts/HeliosCondLightC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondThinC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondThinC-Italic.woff2") format("woff2"), url("../fonts/HeliosCondThinC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosCondThinC;
+  font-display: swap;
+  src: url("../fonts/HeliosCondThinC.woff2") format("woff2"), url("../fonts/HeliosCondThinC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtBlackC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtBlackC-Italic.woff2") format("woff2"), url("../fonts/HeliosExtBlackC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtBlackC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtBlackC.woff2") format("woff2"), url("../fonts/HeliosExtBlackC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtC-BoldItalic.woff2") format("woff2"), url("../fonts/HeliosExtC-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtC-Bold.woff2") format("woff2"), url("../fonts/HeliosExtC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtC-Italic.woff2") format("woff2"), url("../fonts/HeliosExtC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtC.woff2") format("woff2"), url("../fonts/HeliosExtC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtLightC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtLightC-Italic.woff2") format("woff2"), url("../fonts/HeliosExtLightC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtLightC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtLightC.woff2") format("woff2"), url("../fonts/HeliosExtLightC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtraCompressedC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtraCompressedC.woff2") format("woff2"), url("../fonts/HeliosExtraCompressedC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtThinC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtThinC-Italic.woff2") format("woff2"), url("../fonts/HeliosExtThinC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosExtThinC;
+  font-display: swap;
+  src: url("../fonts/HeliosExtThinC.woff2") format("woff2"), url("../fonts/HeliosExtThinC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosLightC;
+  font-display: swap;
+  src: url("../fonts/HeliosLightC-Italic.woff2") format("woff2"), url("../fonts/HeliosLightC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosLightC;
+  font-display: swap;
+  src: url("../fonts/HeliosLightC.woff2") format("woff2"), url("../fonts/HeliosLightC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosThinC;
+  font-display: swap;
+  src: url("../fonts/HeliosThinC-Italic.woff2") format("woff2"), url("../fonts/HeliosThinC-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosThinC;
+  font-display: swap;
+  src: url("../fonts/HeliosThinC.woff2") format("woff2"), url("../fonts/HeliosThinC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HeliosUltraCompressedC;
+  font-display: swap;
+  src: url("../fonts/HeliosUltraCompressedC.woff2") format("woff2"), url("../fonts/HeliosUltraCompressedC.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -146,6 +378,8 @@ body {
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
   transition: 0.7s;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
 }
 .menu__link:hover {
   color: #fff;
@@ -289,6 +523,7 @@ body {
   line-height: 1.3;
   border: solid 1px #fff;
   border-top: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .footer__item:last-child {
   border-bottom: none;
@@ -341,11 +576,14 @@ body {
   font-weight: 400;
   line-height: 1.4;
   margin-bottom: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
 }
 .ecosistem__title {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.4;
+  font-family: HeliosC;
 }
 .ecosistem__title svg {
   max-width: 46px;
@@ -427,6 +665,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .roatmap {
@@ -520,6 +759,7 @@ body {
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .roatmap-colum__items {
   position: relative;
@@ -543,6 +783,7 @@ body {
   margin-top: 8px;
   position: relative;
   padding-left: 44px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .roatmap-colum__item::before {
   content: "";
@@ -636,6 +877,7 @@ body {
   text-align: center;
   position: relative;
   padding-top: 55px;
+  font-family: HeliosC;
 }
 .brands-item__name::before {
   content: "";
@@ -665,6 +907,7 @@ body {
   line-height: 1.4;
   text-align: center;
   opacity: 0.7;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .resoucers {
@@ -747,6 +990,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .resoucers-item__btn {
   margin-top: 69px;
@@ -776,6 +1020,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
   padding-left: 56px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .advantage__item::before {
   content: "";
@@ -924,6 +1169,7 @@ body {
   line-height: 1.4;
   margin-bottom: 45px;
   z-index: 5;
+  font-family: "Plus Jakarta Sans", sans-serif;
   position: relative;
 }
 .game-desc__text span:nth-child(1) {
@@ -1050,7 +1296,7 @@ body {
 .explore__text {
   z-index: 2;
   max-width: 397px;
-  font-family: Plus Jakarta Display;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
@@ -1111,10 +1357,20 @@ body {
 .team__subtitle {
   text-align: center;
   margin-bottom: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 700;
 }
 .team__title {
   text-align: center;
   margin-bottom: 39px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
 }
 .team__items {
   display: flex;
@@ -1143,7 +1399,7 @@ body {
 }
 .team-item__text {
   max-width: 219px;
-  font-family: Plus Jakarta Display;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
@@ -1185,6 +1441,7 @@ body {
   margin-bottom: 45px;
 }
 .spollers__title {
+  font-family: HeliosC;
   margin-top: 42px;
   font-size: 30px;
   font-weight: 700;
@@ -1214,6 +1471,7 @@ body {
   line-height: 1.4;
   opacity: 0.7;
   margin-top: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 ._spoller-active::before {
@@ -1618,6 +1876,7 @@ body {
 }
 
 .button {
+  font-family: HeliosC;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.4;
@@ -1663,12 +1922,15 @@ body {
   font-size: 45px;
   font-weight: 700;
   line-height: 1.2;
+  font-family: HeliosC;
 }
 
 .subtitle {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
 }
 /**
  * Swiper 7.2.0
