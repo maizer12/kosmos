@@ -558,8 +558,7 @@ body {
   position: relative;
   padding-left: 58px;
   transition: 2s;
-  left: -100%;
-  opacity: 0;
+  left: 0;
 }
 .ecosistem__desc::before {
   content: "";
@@ -592,11 +591,6 @@ body {
 }
 .ecosistem__btn {
   margin-top: 65px;
-}
-
-.activate-desc {
-  left: 0;
-  opacity: 1;
 }
 
 @keyframes star {
