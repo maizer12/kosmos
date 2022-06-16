@@ -1714,6 +1714,167 @@ body {
     margin-left: 0;
   }
 }
+.roatmap__colums {
+  position: relative;
+}
+
+.roatmap__colum-active {
+  left: 0%;
+}
+
+.ecosistem {
+  margin-top: -119px;
+}
+
+.arrow {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 6;
+  bottom: 40px;
+  right: 0px;
+  opacity: 0;
+  border: 3px solid rgb(3, 94, 252);
+  border-bottom: 3px solid rgb(252, 3, 65);
+  border-right: 3px solid rgb(252, 3, 65);
+  cursor: pointer;
+  transition: 0.7s;
+  transform: translateX(-100%);
+}
+.arrow__link polygon {
+  fill: rgb(7, 7, 7);
+}
+.arrow__link svg {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  stroke: #fff;
+}
+.arrow__link polygon {
+  transform: 0.7s;
+}
+.arrow:hover {
+  border: 3px solid rgb(3, 94, 252);
+  border-top: 3px solid rgb(252, 3, 65);
+  border-left: 3px solid rgb(252, 3, 65);
+  background-color: rgb(14, 13, 13);
+  box-shadow: 0 0 5px 2px #BF3AFF;
+}
+.arrow:hover polygon {
+  fill: #ffffff;
+}
+
+.arrow-active {
+  opacity: 1;
+  right: 40px;
+  transform: translateX(0);
+}
+
+.game, .explore {
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.4s;
+}
+
+.game__item {
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.4s;
+  position: relative;
+}
+
+.resoucers-item {
+  opacity: 0;
+  position: relative;
+  transition: 0.7s;
+  transition-delay: 0.4s;
+}
+
+.spollers__title {
+  transition: 0.8s;
+  position: relative;
+  opacity: 0;
+  transition-delay: 0.7s;
+}
+
+._watcher-view {
+  left: 0;
+  opacity: 1;
+}
+
+.mask {
+  position: fixed;
+  background-color: rgba(9, 8, 18, 0.8);
+  width: 100%;
+  height: 100vh;
+  z-index: 40;
+  top: 0;
+  left: 0;
+}
+.mask__images {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+}
+.mask__images img {
+  animation: loadin infinite 10s linear;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mask__title {
+  color: #fff;
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+}
+.mask__title span {
+  animation: span infinite 2s;
+}
+.mask__title::after {
+  content: ".";
+  animation: span infinite 3s;
+}
+
+@keyframes span {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loadin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate();
+  }
+}
+@media (max-width: 800px) {
+  .ecosistem__title {
+    font-size: 40px;
+  }
+  .ecosistem {
+    margin-top: -46px;
+  }
+}
+@media (max-height: 550px) {
+  .mask__images {
+    top: 30%;
+    width: 300px;
+    height: 300px;
+  }
+}
 @media (max-width: 500px) {
   .ecosistem__desc {
     padding-left: 15px;
@@ -1832,167 +1993,6 @@ body {
   }
   .resoucers-item__text {
     font-size: 15px;
-  }
-}
-.roatmap__colums {
-  position: relative;
-}
-
-.roatmap__colum-active {
-  left: 0%;
-}
-
-.ecosistem {
-  margin-top: -119px;
-}
-
-@media (max-width: 800px) {
-  .ecosistem__title {
-    font-size: 40px;
-  }
-  .ecosistem {
-    margin-top: -46px;
-  }
-}
-.arrow {
-  position: fixed;
-  width: 35px;
-  height: 35px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 6;
-  bottom: 40px;
-  right: 0px;
-  opacity: 0;
-  border: 3px solid rgb(3, 94, 252);
-  border-bottom: 3px solid rgb(252, 3, 65);
-  border-right: 3px solid rgb(252, 3, 65);
-  cursor: pointer;
-  transition: 0.7s;
-  transform: translateX(-100%);
-}
-.arrow__link polygon {
-  fill: rgb(7, 7, 7);
-}
-.arrow__link svg {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  object-fit: contain;
-  stroke: #fff;
-}
-.arrow__link polygon {
-  transform: 0.7s;
-}
-.arrow:hover {
-  border: 3px solid rgb(3, 94, 252);
-  border-top: 3px solid rgb(252, 3, 65);
-  border-left: 3px solid rgb(252, 3, 65);
-  background-color: rgb(14, 13, 13);
-  box-shadow: 0 0 5px 2px #BF3AFF;
-}
-.arrow:hover polygon {
-  fill: #ffffff;
-}
-
-.arrow-active {
-  opacity: 1;
-  right: 40px;
-  transform: translateX(0);
-}
-
-.game, .explore {
-  opacity: 0;
-  transition: 0.7s;
-  transition-delay: 0.4s;
-}
-
-.game__item {
-  left: 400px;
-  transition: 0.7s;
-  transition-delay: 0.4s;
-  position: relative;
-}
-
-.resoucers-item {
-  left: 1004px;
-  position: relative;
-  transition: 0.7s;
-  transition-delay: 0.4s;
-}
-
-.spollers__title {
-  transition: 0.8s;
-  position: relative;
-  left: 600px;
-  transition-delay: 0.4s;
-}
-
-._watcher-view {
-  left: 0;
-  opacity: 1;
-}
-
-.mask {
-  position: fixed;
-  background-color: rgba(9, 8, 18, 0.8);
-  width: 100%;
-  height: 100vh;
-  z-index: 40;
-  top: 0;
-  left: 0;
-}
-.mask__images {
-  width: 400px;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  position: absolute;
-}
-.mask__images img {
-  animation: loadin infinite 10s linear;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.mask__title {
-  color: #fff;
-  text-align: center;
-  top: 80%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  position: absolute;
-}
-.mask__title span {
-  animation: span infinite 2s;
-}
-.mask__title::after {
-  content: ".";
-  animation: span infinite 3s;
-}
-
-@keyframes span {
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes loadin {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate();
-  }
-}
-@media (max-height: 550px) {
-  .mask__images {
-    top: 30%;
-    width: 300px;
-    height: 300px;
   }
 }
 .button {
