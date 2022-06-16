@@ -6,13 +6,13 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220616125506" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220616170133" />
 	<link rel="shortcut icon" href="https://avatanplus.com/files/resources/original/5745c2a126344154e8804584.png" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body style="overflow: hidden">
 	<div class="wrapper">
 		<header data-scroll="120" data-scroll-show class="header">
 			<div class="header__container">
@@ -21,25 +21,25 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link activation-link">Home </a>
+								<a href="#" data-goto=".ecosistem" class="menu__link activation-link">Home
+								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">About Us</a>
+								<a href="#" data-goto=".about-us" class="menu__link">About Us</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">White paper</a>
+								<a href="#" data-goto=".brands" class="menu__link">White paper</a>
 							</li>
 
 							<li class="menu__item">
-								<a href="#" class="menu__link">Tokenomics</a>
+								<a href="#" data-goto=".game" class="menu__link">Game</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Road Map</a>
+								<a href="#" data-goto=".roatmap" class="menu__link">Road Map</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Road Map</a>
+								<a href="#" data-goto=".brands" class="menu__link">Our brands</a>
 							</li>
-							<li class="menu__item"><a href="#" class="menu__link">Buy</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -47,6 +47,12 @@
 		</header>
 
 		<main class="page">
+			<section class="mask">
+				<div class="mask__images">
+					<picture><source srcset="img/preload.webp" type="image/webp"><img src="img/preload.png" alt="preload" /></picture>
+				</div>
+				<h3 class="mask__title title">Идет загрузка <span>.</span></h3>
+			</section>
 			<section class="ecosistem">
 				<div class="ecosistem__container">
 					<div class="ecosistem__desc">
@@ -108,7 +114,7 @@
 					<p class="roatmap__subtitle subtitle">Our Way</p>
 					<h3 class="roatmap__title title">Roadmap</h3>
 					<div class="roatmap__colums">
-						<div class="roatmap__colum roatmap-colum">
+						<div data-watch class="roatmap__colum roatmap-colum">
 							<h4 class="roatmap-colum__name">
 								Q1 <br />
 								Governance Token Launch on BSC ($CMETA)
@@ -134,7 +140,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="roatmap__colum roatmap-colum">
+						<div data-watch class="roatmap__colum roatmap-colum">
 							<h4 class="roatmap-colum__name">
 								Q2 <br />CMETA Ecosystem Begins
 							</h4>
@@ -153,7 +159,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="roatmap__colum roatmap-colum">
+						<div data-watch class="roatmap__colum roatmap-colum">
 							<h4 class="roatmap-colum__name">
 								Q3 <br />
 								Guardians of Lost Worlds Released to Public (PC)
@@ -170,7 +176,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="roatmap__colum roatmap-colum">
+						<div data-watch class="roatmap__colum roatmap-colum">
 							<h4 class="roatmap-colum__name">
 								Q4 <br />SANKOFA Mainnet Launch
 							</h4>
@@ -191,7 +197,7 @@
 					<p class="brands__subtitle subtitle">No problem</p>
 					<h3 class="brands__title title">Our brands</h3>
 					<div class="brands__items">
-						<div class="brands-item">
+						<div class="brands-item" data-watch>
 							<div class="brands-item__images">
 								<picture><source srcset="img/brands/1.webp" type="image/webp"><img src="img/brands/1.png" alt="brand-vectori" class="brands-item__img" /></picture>
 							</div>
@@ -208,7 +214,7 @@
 								returns.
 							</p>
 						</div>
-						<div class="brands-item">
+						<div class="brands-item" data-watch>
 							<div class="brands-item__images">
 								<picture><source srcset="img/brands/2.webp" type="image/webp"><img src="img/brands/2.png" alt="brand-vectori" class="brands-item__img" /></picture>
 							</div>
@@ -224,7 +230,7 @@
 								prices and generate passive income while playing
 							</p>
 						</div>
-						<div class="brands-item">
+						<div class="brands-item" data-watch>
 							<div class="brands-item__images">
 								<picture><source srcset="img/brands/3.webp" type="image/webp"><img src="img/brands/3.png" alt="brand-vectori" class="brands-item__img" /></picture>
 							</div>
@@ -240,7 +246,7 @@
 					</div>
 				</div>
 				<div class="arrow">
-					<a href="#" class="arrow__link"><svg width="512px" height="512px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+					<a href="#" data-goto=".ecosistem" class="arrow__link"><svg width="512px" height="512px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 							<polygon fill="var(--ci-primary-color, currentColor)" points="390.624 150.625 256 16 121.376 150.625 144.004 173.252 240.001 77.254 240.001 495.236 272.001 495.236 272.001 77.257 367.996 173.252 390.624 150.625" class="ci-primary" />
 						</svg>
 					</a>
@@ -251,7 +257,7 @@
 					<p class="resoucers__subtitle subtitle">What we do</p>
 					<h3 class="resoucers__title title">Our resources</h3>
 					<div class="resoucers__inner">
-						<div class="resoucers-item">
+						<div class="resoucers-item" data-watch>
 							<div class="resoucers-item__logo">
 								<img src="img/brands/logo.svg" alt="logo" class="resoucers-item__icon" />
 							</div>
@@ -279,9 +285,9 @@
 					</div>
 				</div>
 			</section>
-			<section class="game game_shadow">
+			<section data-watch class="game game_shadow">
 				<div class="game__container">
-					<div class="game__item">
+					<div class="game__item" data-watch>
 						<div class="game__iamges">
 							<picture><source srcset="img/game/1.webp" type="image/webp"><img src="img/game/1.png" alt="game" class="game__img" /></picture>
 						</div>
@@ -298,7 +304,7 @@
 						</p>
 						<button class="game-desc__button button">Invest Now</button>
 					</div>
-					<div class="game__item">
+					<div class="game__item" data-watch>
 						<div class="game__iamges game__iamges_height">
 							<picture><source srcset="img/game/2.webp" type="image/webp"><img src="img/game/2.png" alt="game" class="game__img" /></picture>
 						</div>
@@ -306,7 +312,7 @@
 				</div>
 			</section>
 			<section class="explore-virtual">
-				<div class="explore">
+				<div class="explore" data-watch>
 					<div class="explore__container">
 						<div class="explore__items">
 							<div class="explore__column">
@@ -331,7 +337,7 @@
 					</div>
 				</div>
 				<div class="virtual">
-					<div class="virtual__container explore">
+					<div data-watch class="virtual__container explore">
 						<div class="explore__items explore__items_margin">
 							<div class="explore__column explore__column_before">
 								<h3 class="explore__title title">Virtual Arts Studio</h3>
@@ -389,7 +395,7 @@
 						<div class="faq__items">
 							<div data-spollers class="spollers">
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title">
+									<button data-watch type="button" data-spoller class="spollers__title">
 										1.What is CMETA and which tokens we use?
 									</button>
 									<div class="spollers__body">
@@ -400,7 +406,7 @@
 									</div>
 								</div>
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title">
+									<button data-watch type="button" data-spoller class="spollers__title">
 										2. What is CMETA and which tokens we use?
 									</button>
 									<div class="spollers__body">
@@ -408,7 +414,7 @@
 									</div>
 								</div>
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title">
+									<button data-watch type="button" data-spoller class="spollers__title">
 										3. What is CMETA and which tokens we use?
 									</button>
 									<div class="spollers__body">
@@ -416,7 +422,7 @@
 									</div>
 								</div>
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title">
+									<button data-watch type="button" data-spoller class="spollers__title">
 										4. What is CMETA and which tokens we use?
 									</button>
 									<div class="spollers__body">
@@ -424,7 +430,7 @@
 									</div>
 								</div>
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title">
+									<button data-watch type="button" data-spoller class="spollers__title">
 										5. What is CMETA and which tokens we use?
 									</button>
 									<div class="spollers__body">
@@ -432,7 +438,7 @@
 									</div>
 								</div>
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title">
+									<button data-watch type="button" data-spoller class="spollers__title">
 										6. What is CMETA and which tokens we use?
 									</button>
 									<div class="spollers__body">
@@ -476,7 +482,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20220616125506"></script>
+	<script src="js/app.min.js?_v=20220616170133"></script>
 </body>
 
 </html>
